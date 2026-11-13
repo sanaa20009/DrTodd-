@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Todd — Official Medical Portal</title>
+<style>
+:root{--green:#173f32;--green2:#245b45;--cream:#f5f0df;--gold:#c7a45b;--ink:#203329;--muted:#65746a;--line:#d9d2bd}
+*{box-sizing:border-box}
+body{margin:0;background:#e9e6d9;color:var(--ink);font-family:Georgia,"Times New Roman",serif}
+header{background:linear-gradient(135deg,#14372d,#245b45);color:var(--cream);padding:28px 20px 22px;border-bottom:5px solid var(--gold)}
+.wrap{max-width:940px;margin:auto}
+.eyebrow{letter-spacing:.2em;text-transform:uppercase;font:11px Arial,sans-serif;color:#d9c58f}
+h1{margin:8px 0 4px;font-size:clamp(30px,5vw,48px);font-weight:normal}
+.subtitle{font:13px Arial,sans-serif;letter-spacing:.08em;color:#e3ddc9}
+.seal{float:right;border:1px solid var(--gold);border-radius:50%;width:68px;height:68px;display:grid;place-items:center;text-align:center;color:var(--gold);font:10px Arial,sans-serif;line-height:1.4;margin-left:12px}
+nav{background:#f9f5e8;border-bottom:1px solid var(--line);display:flex;gap:0;justify-content:center;flex-wrap:wrap}
+nav button{background:none;border:0;border-bottom:3px solid transparent;padding:15px 22px;color:var(--green);font: bold 12px Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;cursor:pointer}
+nav button[aria-selected="true"]{border-bottom-color:var(--gold);background:#eee8d6}
+main{max-width:940px;margin:28px auto;padding:0 20px}
+.panel{display:none;background:#fbf8ed;border:1px solid var(--line);padding:clamp(20px,4vw,38px);box-shadow:0 8px 24px #173f3210}
+.panel.active{display:block}
+h2{font-weight:normal;font-size:28px;color:var(--green);margin:0 0 8px}
+.rule{height:1px;background:var(--gold);width:100%;margin:15px 0 24px}
+.kicker{font:11px Arial,sans-serif;letter-spacing:.15em;text-transform:uppercase;color:var(--muted)}
+p{line-height:1.7}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:20px}
+.card{border:1px solid var(--line);padding:17px;background:#f5f0df}
+.card h3{font-size:17px;font-weight:normal;color:var(--green);margin:0 0 8px}
+.card p{font-size:14px;margin:0}
+.badge{display:inline-block;border:1px solid var(--gold);padding:5px 8px;color:#745a24;font:10px Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;margin-bottom:9px}
+blockquote{border-left:3px solid var(--gold);padding:8px 18px;margin:20px 0;color:#4d5e51;font-style:italic}
+.contactbox{border:1px solid var(--gold);padding:20px;background:#f2ead3;margin-top:18px}
+.contactbox strong{color:var(--green)}
+footer{text-align:center;color:#778176;font:11px Arial,sans-serif;padding:25px 15px 35px}
+.small{font:12px Arial,sans-serif;color:var(--muted)}
+@media(max-width:500px){nav button{padding:13px 12px;font-size:11px}.seal{width:55px;height:55px;font-size:8px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="seal">NHDA<br>OFFICIAL<br>SEAL</div>
+    <div class="eyebrow">National Health & Dietary Authority · Fictional Portal</div>
+    <h1>Dr. Todd</h1>
+    <div class="subtitle">PhD · Harvard University · Nutrition & Advanced Dietary Enlightenment</div>
+  </div>
+</header>
+<nav aria-label="Portal sections">
+  <button aria-selected="true" data-tab="overview">Overview</button>
+  <button aria-selected="false" data-tab="honors">Honors</button>
+  <button aria-selected="false" data-tab="research">Research</button>
+  <button aria-selected="false" data-tab="contact">Contact</button>
+</nav>
+<main>
+<section class="panel active" id="overview">
+  <div class="kicker">Executive profile</div>
+  <h2>Overview</h2><div class="rule"></div>
+  <p><strong>Dr. Todd</strong> is a pioneering voice in nutritional enlightenment, spiritual wellness, sleep reform, and the highly specialized science of having a strong opinion about health. His work bridges dietary philosophy, experimental meditation, and public campaigns designed to make everyday life healthier—one bean, one bedtime, and one questionable supplement at a time.</p>
+  <p>His professional outlook is grounded in curiosity, disciplined skepticism, and a steadfast belief that Ohio deserves a fair hearing. While the rest of the world may debate the state’s merits, Dr. Todd continues to defend Ohio with the confidence of a man who has personally reviewed its entire spiritual and nutritional record.</p>
+  <div class="card"><span class="badge">Portal note</span><p><strong>Institutional principle:</strong> curiosity first, wellness second, and absolutely no pretending that a bedtime at 2:00 a.m. is a normal afternoon.</p></div>
+  <div class="grid">
+    <div class="card"><span class="badge">Professional focus</span><h3>Nutrition & wellness</h3><p>Dietary insight, lifestyle experiments, and health commentary with unusually high conviction.</p></div>
+    <div class="card"><span class="badge">Personal philosophy</span><h3>Spiritual curiosity</h3><p>Exploring meditation, inner peace, and the mysteries of the human experience.</p></div>
+  </div>
+</section>
+
+<section class="panel" id="honors">
+  <div class="kicker">Recognition & distinctions</div>
+  <h2>Honors</h2><div class="rule"></div>
+  <div class="grid">
+    <div class="card"><span class="badge">Nutrition</span><h3>Award of Healthy Beans</h3><p>For exceptional service to the state of garbanzo beans and advancing the public reputation of the garbanzo bean.</p></div>
+    <div class="card"><span class="badge">Retained distinction</span><h3>Healthy Capybara Award of the Year</h3><p>For unwavering dedication to capybara wellness, peace, and a well-earned break from the chaos.</p></div>
+    <div class="card"><span class="badge">Public advocacy</span><h3>No Pills, No More Campaign Medal</h3><p>For conducting spirited campaigns against pill-first thinking and advocating thoughtful, evidence-aware approaches to health.</p></div>
+    <div class="card"><span class="badge">Sleep reform</span><h3>Nightly Owl Rehabilitation Prize</h3><p>For authoring <em>How to Quit Being a Nightly Owl: A Brief Look at Fixing Your Sleep Schedule</em>, a landmark work in bedtime diplomacy.</p></div>
+    <div class="card"><span class="badge">Spiritual affairs</span><h3>Spiritual Human of the Year</h3><p>Recognized for spiritual curiosity and reportedly featured in the New York Times Magazine’s highly prestigious “People Who Are Very Into Their Inner Peace” coverage.</p></div>
+  </div>
+</section>
+
+<section class="panel" id="research">
+  <div class="kicker">Projects, trials & publications</div>
+  <h2>Research</h2><div class="rule"></div>
+  <div class="grid">
+    <div class="card"><span class="badge">Meditation & movement</span><h3>Riky Meditation Experiments</h3><p>Widespread experimental sessions in Riky meditation, exploring how to use a sound bowel, different styles of yoga, and the fine art of becoming calmer without turning into furniture.</p></div>
+    <div class="card"><span class="badge">Collaborative fieldwork</span><h3>Dr. Todd × Dr. Jason</h3><p>Cooperation on the extraordinary question: <em>How is the human body able to climb an 11-foot-long tree?</em> Field observations, grip analysis, and a respectful amount of disbelief.</p></div>
+    <div class="card"><span class="badge">Food & digestion</span><h3>The Noodles–Milk Harmony Study</h3><p>Investigating the harmonious effect of noodles served with a cup of milk—and the revelation that the stomach may be capable of many things. Results remain classified under “dinner science.”</p></div>
+    <div class="card"><span class="badge">Fruit-forward initiative</span><h3>Orange, Mango & Vitamin C Project</h3><p>A cheerful campaign for more oranges, mangos, and vitamin-C-rich foods, alongside the principle that supplements and pills should not be treated as automatic solutions.</p></div>
+    <div class="card"><span class="badge">Beverage policy</span><h3>No Coffee, More Clarity</h3><p>Dr. Todd’s beverage position: coffee is not a daily default; natural coffee may be enjoyed occasionally for its health benefits, according to his personal preference.</p></div>
+    <div class="card"><span class="badge">Seafood initiative</span><h3>Operation: More Seafood</h3><p>Encouraging the exploration of seafood as part of a varied diet, with the usual attention to allergies, safe preparation, and individual needs.</p></div>
+    <div class="card"><span class="badge">Mind & spirit</span><h3>Consciousness, Calm & Capybaras</h3><p>An exploratory body of work on meditation, spiritual human development, and the suspiciously peaceful influence of capybara energy.</p></div>
+  </div>
+  <div class="contactbox" style="margin-top:22px">
+    <span class="badge">Dr. Todd's field notes</span>
+    <p><strong>On coffee:</strong> “no Coffee unless natural and drank occasionally for its health benefits”</p>
+    <p><strong>On water & milk:</strong> “be Careful with the milk brand and base tap water is not good reverse osmosis = only option if bottled”</p>
+    <p class="small">These are Dr. Todd’s personal statements in this parody portal—not verified medical guidance. Water safety depends on local supply and testing; prescribed medicines should never be stopped or changed without a qualified clinician.</p>
+  </div>
+  <p class="small" style="margin-top:20px">All research titles and claims on this portal are fictional parody.</p>
+</section>
+
+<section class="panel" id="contact">
+  <div class="kicker">Correspondence & scheduling</div>
+  <h2>Contact</h2><div class="rule"></div>
+  <p>For consultations, collaborative research proposals, urgent garbanzo-bean matters, contact Dr. Todd through WhatsApp.</p>
+  <div class="contactbox">
+    <strong>WhatsApp correspondence</strong><br>
+    <p>Contact channel: <strong>WhatsApp</strong> · Direct message required</p>
+    <p><strong>Office hours:</strong> Before 9:00 p.m. local time.</p>
+    <p>Messages received after 9:00 p.m. may be reviewed the following day. The doctor’s brain has officially clocked out; please do not negotiate with it.</p>
+  </div>
+  <blockquote>“Respect the schedule. Protect the sleep. Send the WhatsApp before the night owl takes over.”</blockquote>
+  <p class="small">No phone number is displayed on this fictional portal.</p>
+</section>
+</main>
+<footer>© Dr. Todd Institute of Advanced Dietary Enlightenment · A parody portal, not a real medical institution or credential.</footer>
+<script>
+const tabs=[...document.querySelectorAll('nav button')];
+const panels=[...document.querySelectorAll('.panel')];
+tabs.forEach(btn=>btn.addEventListener('click',()=>{
+  tabs.forEach(b=>b.setAttribute('aria-selected',String(b===btn)));
+  panels.forEach(p=>p.classList.toggle('active',p.id===btn.dataset.tab));
+}));
+</script>
+</body>
+</html>
